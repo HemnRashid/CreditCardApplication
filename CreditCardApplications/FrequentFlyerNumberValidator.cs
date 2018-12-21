@@ -12,8 +12,20 @@ namespace CreditCardApplications
     ///     - Unreliable. The external service fails often, making our tests fail
     ///     - Effort. The effort (and/or complexity) to use the real service makes tests painful to write
     /// </summary>
-    public class FrequentFlyerNumberValidatorService : IFrequentFlyerNumberValidator
+    public class FrequentFlyerNumberValidator : IFrequentFlyerNumberValidator
     {
+
+        public IServiceInformation ServiceInformation => throw new NotImplementedException("For demo purpose");
+
+        public ValidationMode ValidationMode { get => throw new NotImplementedException("For demo purpose"); set => throw new NotImplementedException("For demo purpose"); }
+
+        //public string LicenseKey
+        //{
+        //    get { throw new NotImplementedException("For demo purpose"); }
+        //}
+
+        //public string LicenseKey => throw new NotImplementedException("For demo purpose");
+
         public bool IsValid(string frequentFlyerNumber)
         {
             throw new NotImplementedException("For demo purposes");
@@ -23,5 +35,6 @@ namespace CreditCardApplications
         {
             throw new NotImplementedException("For demo purposes");
         }
+
     }
 }
