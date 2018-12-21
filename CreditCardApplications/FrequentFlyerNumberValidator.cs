@@ -19,6 +19,8 @@ namespace CreditCardApplications
 
         public ValidationMode ValidationMode { get => throw new NotImplementedException("For demo purpose"); set => throw new NotImplementedException("For demo purpose"); }
 
+        public event EventHandler ValidatorLookupPerformed;
+
         //public string LicenseKey
         //{
         //    get { throw new NotImplementedException("For demo purpose"); }

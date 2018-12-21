@@ -32,6 +32,7 @@ namespace CreditCardApplications
         IServiceInformation ServiceInformation { get; } // nested properties, anropar IServiceInformation och sedan i sin tur ILicens.
 
         ValidationMode ValidationMode { get; set; }
-        
+
+        event EventHandler ValidatorLookupPerformed;
     }
 }
